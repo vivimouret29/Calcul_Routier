@@ -9,4 +9,4 @@ cgitb.enable()
 print "Content-type: text/html; charset=utf-8\n"
 
 
-print "Hello" 
+print "Hello"

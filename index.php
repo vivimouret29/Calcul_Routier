@@ -6,10 +6,6 @@
   <body>
 
 
-
-
-
-
   <?php
 $client = new http\Client;
 $request = new http\Client\Request;
