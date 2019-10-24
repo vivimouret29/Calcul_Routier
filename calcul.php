@@ -1,6 +1,6 @@
 <?php
 
-#exec ('python test.py')
-system ('python test.py')
+exec ('python test.py')
+#system ('python test.py')
 
 ?>

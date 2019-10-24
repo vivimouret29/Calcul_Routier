@@ -1,4 +1,5 @@
 #!C:\Users\BEP29\AppData\Local\Programs\Python\Python37-32
+# -*- coding: utf-8 -*-
 
 villed = input("Entrez la ville de départ : ")
 villea = input("Entrez la ville d'arrivée : ")
