@@ -20,9 +20,7 @@ for search in list_ville:
 
         
 
-
-
-print("Hello")
+print "Hello"
 
 
 
