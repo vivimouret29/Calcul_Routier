@@ -29,7 +29,7 @@ Un conducteur doit faire une pause de 15 min toutes les 2 heures.
 
 ## Pour lancer le programme
 
-Pour pourvoir utiliser le Programme de Calcul Routier, vous pouvez :
+* Pour pourvoir utiliser le Programme de Calcul Routier, vous pouvez :
     * directement lancer le fichier avec le lanceur Python3.7
     * le lancer via votre terminal Windows, Linux et Mac
 
