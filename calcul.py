@@ -41,7 +41,7 @@ while launch == True:
     temps()
 
     #print(result)
-    print("Vous avez " + str(distance) + " km à parcourir en "+str(hours)+"h "+str(minutes)+" minutes.")
+    print("Vous avez " + str(distance) + " km à parcourir en "+str(hours)+"h "+str(minutes)+" minutes.")        #affichage des résultats
     print("Faites une pause de 15 minutes toutes les 2h pour votre sécurité")
 
     choice = input("Voulez-vous relancer une recherche ? ")
