@@ -8,8 +8,8 @@ launch = True   #permet de relancer l'application
 while launch == True:
 
     print("Programme de Calcul Routier")
-    origins = input("Entrez la ville de départ : ")
-    destinations = input("Entrez la ville d'arrivée : ")
+    origins = input("Entrez la ville et le département de départ : ")
+    destinations = input("Entrez la ville et le département d'arrivée : ")
 
     request = requests.get('https://maps.googleapis.com/maps/api/distancematrix/json?origins='+origins+'&destinations='+destinations+'&key=AIzaSyAeio9oOWJPUFFoDsN2mWMyXIU52ulRTzk')
     #utilisation API Google Distance Matrix
@@ -19,11 +19,9 @@ while launch == True:
 
     distance = round(result['rows'][0]['elements'][0]['distance']['value'] / 1000)
 
-    minutes = 0
-    hours = 0
-
     def temps():            #calcul le temps du trajet
         minutes = 0
+        count = 0
         hours = 0
         dist = distance
         while dist >= 180:
@@ -33,8 +31,11 @@ while launch == True:
         while dist < 13.5:
             minutes += 1
         if minutes >= 60:
-            hours += 1
-            minutes = 0
+            count = minutes
+            count -= 60
+            if 59 >= count >= 0:
+                hours += 1
+                minutes = count
         return hours,minutes
 
     hours,minutes = temps()

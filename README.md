@@ -31,11 +31,22 @@ Un conducteur doit faire une pause de 15 min toutes les 2 heures.
     * la distance parcourue
     * le temps pour parcourir cette distance HH/mm (arrondi à la minute supérieure)
 
-## Pour lancer le programme
+## Pour lancer le programme Python
+
+Mon **Programme de Calcul Routier** est un fichier Python.
+
+En utilisant l'`API Google Distance Matrix`, je reçois ma distance entre les deux villes.
+Cela exige une connection internet haut-débit.
+
+Suite à un algorithme, j'en déduis le temps de trajet du camion.
 
 * Pour pourvoir utiliser le Programme de Calcul Routier, vous pouvez :
     * directement lancer le fichier avec le lanceur Python3.7
     * le lancer via votre terminal Windows, Linux et Mac
+
+Veillez à **rentrez la région**, pour une recherche optimale.
+
+*Ex : Entrez la ville de départ : Bordeaux,Nouvelle-Aquitaine*
 
 Ressource distance entre deux villes :
 https://www.bonnesroutes.com/mileage-chart/c2202162-france/
