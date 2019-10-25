@@ -44,7 +44,7 @@ Suite à un algorithme, j'en déduis le temps de trajet du camion.
     * directement lancer le fichier avec le lanceur Python3.7
     * le lancer via votre terminal Windows, Linux et Mac
 
-Veillez à **rentrez la région**, pour une recherche optimale.
+Veillez à **rentrer la région**, pour une recherche optimale.
 
 *Ex : Entrez la ville de départ : Bordeaux,Nouvelle-Aquitaine*
 
