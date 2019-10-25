@@ -21,21 +21,26 @@ while launch == True:
 
     def temps():            #calcul le temps du trajet
         minutes = 0
-        count = 0
         hours = 0
         dist = distance
-        while dist >= 180:
-            dist -= 153
-            minutes += 15
-            hours += 2
-        while dist < 13.5:
-            minutes += 1
+        if dist > 180:
+            while dist >= 180:
+                dist -= 153
+                minutes += 15
+                hours += 2
+        else:
+            while dist > 1:
+                dist -= 1.5
+                minutes += 1
         if minutes >= 60:
             count = minutes
             count -= 60
             if 59 >= count >= 0:
                 hours += 1
                 minutes = count
+            else:
+                minutes = 0
+                hours += 1
         return hours,minutes
 
     hours,minutes = temps()
@@ -43,8 +48,9 @@ while launch == True:
 
     #print(result)
     print("Vous avez " + str(distance) + " km à parcourir en "+str(hours)+"h "+str(minutes)+" minutes.")        #affichage des résultats
-    print("Faites une pause de 15 minutes toutes les 2h pour votre sécurité")
+    if hours >= 3:
+        print("Faites une pause de 15 minutes toutes les 2h pour votre sécurité.")
 
-    choice = input("Voulez-vous relancer une recherche ? ")
-    if choice not in ('o', 'oui', 'ok','yes','y'):
+    choice = input("Voulez-vous relancer une recherche ? (o/n)")
+    if choice not in ('o', 'oui'):
         launch = False
