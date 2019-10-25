@@ -6,11 +6,15 @@
 ### Énoncé :
 
 Je suis un directeur d’entreprise de livraison routier à travers la France.
+
 Écrire un programme qui affiche un tableau me permettant de connaître l'heure à laquelle une
 livraison sera effectuée.
-Un camion accélère de 10 km/h, par minute.
-Un camion ralenti de 10 km/h, par minute.
+
+* Un camion accélère de 10 km/h, par minute.
+* Un camion ralenti de 10 km/h, par minute.
+
 Sa vitesse maximale est de 90 km/h.
+
 Un conducteur doit faire une pause de 15 min toutes les 2 heures.
 
 * Consignes :
